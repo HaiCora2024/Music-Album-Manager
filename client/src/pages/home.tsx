@@ -80,6 +80,16 @@ export default function Home() {
                </p>
             </div>
 
+            {/* Description Text - Lower Left Third */}
+            <div className="mt-12 max-w-xl animate-in fade-in slide-in-from-left-10 duration-1000 fill-mode-forwards opacity-0" style={{animationDelay: '0.8s'}}>
+               <h3 className="text-2xl md:text-3xl font-light leading-snug text-white/90">
+                 Anton Ripatti — sound artist and performer.
+               </h3>
+               <p className="text-lg md:text-xl text-gray-300 font-light mt-4 leading-relaxed">
+                 Merging music, theater, and visual storytelling into the immersive world of Babakamusic.
+               </p>
+            </div>
+
           </div>
         </div>
         
