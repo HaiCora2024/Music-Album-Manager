@@ -94,9 +94,13 @@ export default function Home() {
         </div>
         
         {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce opacity-70 z-20">
+        <a 
+          href="#about"
+          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce opacity-70 z-20 hover:opacity-100 transition-opacity cursor-pointer"
+          aria-label="Scroll to About section"
+        >
            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
-        </div>
+        </a>
       </section>
 
       {/* About Section */}
