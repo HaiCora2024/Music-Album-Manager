@@ -3,17 +3,30 @@ import { Link } from 'wouter';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black">
+    <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black overflow-x-hidden">
+      {/* Global Background */}
+      <div 
+        className="fixed inset-0 z-0 opacity-20 pointer-events-none"
+        style={{
+          backgroundImage: `url('/pics/04_Anton Ripatti & Babakaband.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
+      </div>
+
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-xl md:text-2xl font-bold tracking-[0.2em] uppercase">Anton Ripatti</h1>
-          <nav className="hidden md:flex gap-8 text-xs font-medium uppercase tracking-[0.2em]">
-            <a href="#video" className="hover:text-gray-400 transition-colors duration-300">Video</a>
-            <a href="#about" className="hover:text-gray-400 transition-colors duration-300">About</a>
-            <a href="#music" className="hover:text-gray-400 transition-colors duration-300">Music</a>
-            <a href="#tour" className="hover:text-gray-400 transition-colors duration-300">Tour</a>
-            <Link href="/contact" className="hover:text-gray-400 transition-colors duration-300">Contact</Link>
+      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent border-b border-white/10 backdrop-blur-sm">
+        <div className="container mx-auto px-6 py-6 flex justify-between items-center">
+          <h1 className="text-2xl font-bold tracking-[0.1em] uppercase">Anton Ripatti</h1>
+          <nav className="hidden md:flex gap-10 text-xs font-medium uppercase tracking-[0.2em]">
+            <a href="#video" className="hover:text-white/70 transition-colors duration-300">Video</a>
+            <a href="#about" className="hover:text-white/70 transition-colors duration-300">About</a>
+            <a href="#music" className="hover:text-white/70 transition-colors duration-300">Music</a>
+            <a href="#tour" className="hover:text-white/70 transition-colors duration-300">Tour</a>
+            <Link href="/contact" className="hover:text-white/70 transition-colors duration-300">Contact</Link>
           </nav>
           {/* Mobile Menu Button Placeholder */}
           <button className="md:hidden text-white uppercase text-xs tracking-widest">
@@ -25,63 +38,69 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="video"
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+        className="relative min-h-screen flex items-end pb-20 md:pb-32 overflow-hidden"
       >
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed scale-105"
+         <div 
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url('/pics/04_Anton Ripatti & Babakaband.jpg')`,
           }}
         >
-          <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
+          {/* Gradient Overlay for Text Readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30"></div>
+          
+          {/* Red Grid/Pattern Overlay Effect (similar to reference) */}
+           <div 
+            className="absolute inset-0 z-10 pointer-events-none opacity-30 mix-blend-overlay"
+            style={{
+                backgroundImage: 'radial-gradient(circle, rgba(255,0,0,0.1) 1px, transparent 1px)',
+                backgroundSize: '20px 20px'
+            }}
+           ></div>
         </div>
 
-        <div className="container mx-auto px-6 text-center z-10 pt-20">
-          <div className="max-w-4xl mx-auto space-y-10">
-            <h2 className="text-5xl md:text-7xl font-extralight tracking-tight leading-tight mix-blend-overlay opacity-90">
-              Sound Artist <br /> & Performer
-            </h2>
-            <p className="text-lg md:text-2xl text-gray-300 font-light max-w-2xl mx-auto leading-relaxed">
-              Merging music, theater, and visual storytelling into the immersive world of <span className="text-white font-normal">Babakamusic</span>.
-            </p>
-
-            {/* MARIE Link */}
-            <div className="pt-12 animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-forwards opacity-0" style={{animationDelay: '0.5s'}}>
-              <a
+        <div className="container mx-auto px-6 z-20 w-full">
+          <div className="flex flex-col items-start space-y-2">
+            
+            {/* MARIE Release Title */}
+            <div className="animate-in fade-in slide-in-from-left-10 duration-1000 fill-mode-forwards opacity-0 flex flex-col items-start">
+               <a
                 href="https://www.youtube.com/watch?v=qCifhWTpnmM&t=2s"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block group cursor-pointer"
+                className="group cursor-pointer block"
               >
-                <div className="text-7xl md:text-9xl font-bold tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500 group-hover:to-white transition-all duration-500 transform group-hover:scale-105">
+                <h2 className="text-[120px] leading-[0.8] font-bold tracking-tighter uppercase text-white group-hover:text-gray-200 transition-colors mix-blend-difference">
                   MARIE
-                </div>
-                <div className="text-xs md:text-sm uppercase tracking-[0.3em] border-b border-white/30 group-hover:border-white inline-block pb-1 transition-all text-gray-400 group-hover:text-white">
-                  marie is out now
-                </div>
+                </h2>
+                <div className="h-2 w-full bg-white mt-2 group-hover:w-[110%] transition-all duration-500"></div>
               </a>
+               <p className="text-xl md:text-2xl uppercase tracking-[0.5em] text-white/90 mt-4 font-light pl-2">
+                  Release is out now
+               </p>
             </div>
+
           </div>
         </div>
         
         {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce opacity-50">
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce opacity-70 z-20">
            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 bg-black relative">
+      <section id="about" className="py-32 relative z-10 bg-black/80 backdrop-blur-sm">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto mb-24 text-center">
-             <h3 className="text-sm md:text-base font-medium mb-6 text-gray-500 uppercase tracking-[0.3em]">
+             <h3 className="text-sm md:text-base font-medium mb-6 text-gray-400 uppercase tracking-[0.3em]">
               The Project
             </h3>
             <h4 className="text-3xl md:text-5xl font-light mb-12 uppercase tracking-wide leading-tight">
-              About Anton Ripatti <br/><span className="text-gray-600">Babakamusic Performance</span>
+              About Anton Ripatti <br/><span className="text-gray-500">Babakamusic Performance</span>
             </h4>
             
-            <div className="text-gray-400 leading-loose space-y-8 text-lg md:text-xl font-light text-justify md:text-center">
+            <div className="text-gray-300 leading-loose space-y-8 text-lg md:text-xl font-light text-justify md:text-center">
               <p>
                 <strong className="text-white font-normal">Babakamusic</strong> is a surreal live performance where music, theatrical play, visual storytelling, and light merge into one immersive experience.
               </p>
@@ -102,9 +121,9 @@ export default function Home() {
             <div className="group">
               <div className="flex justify-between items-end mb-4">
                  <h4 className="text-lg font-light uppercase tracking-widest">Showreel</h4>
-                 <div className="h-[1px] bg-gray-800 flex-grow ml-4 mb-2"></div>
+                 <div className="h-[1px] bg-gray-700 flex-grow ml-4 mb-2"></div>
               </div>
-              <div className="aspect-video bg-gray-900 rounded-sm overflow-hidden border border-gray-800 group-hover:border-gray-600 transition-colors">
+              <div className="aspect-video bg-gray-900 rounded-sm overflow-hidden border border-gray-800 group-hover:border-gray-500 transition-colors shadow-2xl">
                 <iframe
                   width="100%"
                   height="100%"
@@ -120,9 +139,9 @@ export default function Home() {
             <div className="group">
               <div className="flex justify-between items-end mb-4">
                  <h4 className="text-lg font-light uppercase tracking-widest">Marie</h4>
-                 <div className="h-[1px] bg-gray-800 flex-grow ml-4 mb-2"></div>
+                 <div className="h-[1px] bg-gray-700 flex-grow ml-4 mb-2"></div>
               </div>
-              <div className="aspect-video bg-gray-900 rounded-sm overflow-hidden border border-gray-800 group-hover:border-gray-600 transition-colors">
+              <div className="aspect-video bg-gray-900 rounded-sm overflow-hidden border border-gray-800 group-hover:border-gray-500 transition-colors shadow-2xl">
                 <iframe
                   width="100%"
                   height="100%"
@@ -140,13 +159,13 @@ export default function Home() {
       </section>
 
       {/* Music Section */}
-      <section id="music" className="py-32 bg-zinc-950 border-t border-white/5">
+      <section id="music" className="py-32 relative z-10 bg-zinc-950/90 backdrop-blur-sm border-t border-white/5">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/10 pb-6">
             <h3 className="text-4xl md:text-6xl font-thin tracking-tighter uppercase">
               Discography
             </h3>
-            <p className="text-gray-500 uppercase tracking-widest text-sm mt-4 md:mt-0">Listen on all platforms</p>
+            <p className="text-gray-400 uppercase tracking-widest text-sm mt-4 md:mt-0">Listen on all platforms</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
@@ -157,8 +176,8 @@ export default function Home() {
               rel="noopener noreferrer"
               className="group block"
             >
-              <div className="bg-gray-900 aspect-square overflow-hidden relative mb-6">
-                <div className="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+              <div className="bg-gray-900 aspect-square overflow-hidden relative mb-6 shadow-lg">
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all duration-500 z-10"></div>
                 <img
                   src="/pics/SON11.jpg"
                   alt="Son 11 Album Cover"
@@ -203,8 +222,8 @@ export default function Home() {
               rel="noopener noreferrer"
               className="group block"
             >
-              <div className="bg-gray-900 aspect-square overflow-hidden relative mb-6">
-                <div className="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+              <div className="bg-gray-900 aspect-square overflow-hidden relative mb-6 shadow-lg">
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all duration-500 z-10"></div>
                 <img
                   src="/pics/BABAKABAND.jpg"
                   alt="Babakaband Album Cover"
@@ -223,10 +242,7 @@ export default function Home() {
       </section>
 
       {/* Tour Section */}
-      <section id="tour" className="py-32 bg-black relative overflow-hidden">
-        {/* Abstract background element */}
-        <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-gray-900/40 via-black to-black pointer-events-none"></div>
-
+      <section id="tour" className="py-32 relative z-10 bg-black/90 overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
           <h3 className="text-8xl md:text-9xl font-bold text-white/5 absolute -top-10 left-0 pointer-events-none select-none">
             TOUR
@@ -280,7 +296,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-20 bg-black border-t border-gray-900">
+      <footer className="py-20 bg-black border-t border-gray-900 relative z-10">
         <div className="container mx-auto px-6">
           <div className="flex flex-col items-center space-y-10">
             {/* Social Icons */}
