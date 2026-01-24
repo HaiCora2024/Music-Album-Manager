@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'wouter';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
             <a href="#about" className="hover:text-gray-400 transition-colors duration-300">About</a>
             <a href="#music" className="hover:text-gray-400 transition-colors duration-300">Music</a>
             <a href="#tour" className="hover:text-gray-400 transition-colors duration-300">Tour</a>
+            <Link href="/contact" className="hover:text-gray-400 transition-colors duration-300">Contact</Link>
           </nav>
           {/* Mobile Menu Button Placeholder */}
           <button className="md:hidden text-white uppercase text-xs tracking-widest">
@@ -158,7 +160,7 @@ export default function Home() {
               <div className="bg-gray-900 aspect-square overflow-hidden relative mb-6">
                 <div className="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-all duration-500 z-10"></div>
                 <img
-                  src="/pics/a0981978491_10.jpg"
+                  src="/pics/SON11.jpg"
                   alt="Son 11 Album Cover"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
@@ -204,7 +206,7 @@ export default function Home() {
               <div className="bg-gray-900 aspect-square overflow-hidden relative mb-6">
                 <div className="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-all duration-500 z-10"></div>
                 <img
-                  src="/pics/a0356146893_10.jpg"
+                  src="/pics/BABAKABAND.jpg"
                   alt="Babakaband Album Cover"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
@@ -247,7 +249,7 @@ export default function Home() {
                 </div>
               </div>
               <a
-                href="#"
+                href="mailto:babakamusic@gmail.com"
                 className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
               >
                 Tickets
@@ -267,7 +269,7 @@ export default function Home() {
                 </div>
               </div>
               <a
-                href="#"
+                href="mailto:babakamusic@gmail.com"
                 className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
               >
                 Tickets
@@ -329,7 +331,7 @@ export default function Home() {
             </a>
 
             <div className="text-gray-700 text-xs tracking-wide">
-              &copy; {new Date().getFullYear()} Anton Ripatti. All rights reserved.
+              &copy; {new Date().getFullYear()} Babakamusic. All rights reserved.
             </div>
           </div>
         </div>
