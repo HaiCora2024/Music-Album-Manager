@@ -1,4 +1,4 @@
-name: Deploy React App to Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -27,17 +27,26 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           
       - name: Install dependencies
-        run: |
-          cd client
-          npm ci
+        run: npm ci
           
       - name: Build
+        run: npm run build
+      
+      - name: Debug - Check build output
         run: |
-          cd client
-          npm run build
+          echo "=== Checking for dist folder ==="
+          ls -la
+          if [ -d "dist" ]; then
+            echo "=== Contents of dist folder ==="
+            ls -la dist/
+          fi
+          if [ -d "dist/public" ]; then
+            echo "=== Contents of dist/public folder ==="
+            ls -la dist/public/
+          fi
           
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -45,7 +54,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './client/dist'
+          path: './dist/public'
           
       - name: Deploy to GitHub Pages
         id: deployment
