@@ -81,7 +81,7 @@ export default function Home() {
             </div>
 
             {/* Description Text - Lower Left Third */}
-            <div className="mt-12 max-w-xl animate-in fade-in slide-in-from-left-10 duration-1000 fill-mode-forwards opacity-0" style={{animationDelay: '0.8s'}}>
+            <div className="mt-12 max-w-xl">
                <h3 className="text-2xl md:text-3xl font-light leading-snug text-white/90">
                  Anton Ripatti — sound artist and performer.
                </h3>
