@@ -114,7 +114,7 @@ export default function Home() {
               About Anton Ripatti <br/><span className="text-gray-500">Babakamusic Performance</span>
             </h4>
             
-            <div className="text-gray-300 leading-loose space-y-8 text-lg md:text-xl font-light text-justify md:text-center">
+            <div className="text-gray-300 leading-loose space-y-8 text-lg md:text-xl font-light text-left">
               <p>
                 <strong className="text-white font-normal">Babakamusic</strong> is a surreal live performance where music, theatrical play, visual storytelling, and light merge into one immersive experience.
               </p>
@@ -270,12 +270,12 @@ export default function Home() {
             <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
                 <div className="text-center min-w-[80px]">
-                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">24</div>
-                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Jan</div>
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">2</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Apr</div>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">Galeriehaus</span>
-                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Hof, Germany</span>
+                  <span className="text-2xl font-light tracking-wide">Hank Chinaski</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Berlin, Germany</span>
                 </div>
               </div>
               <a
@@ -296,6 +296,26 @@ export default function Home() {
                 <div className="flex flex-col">
                   <span className="text-2xl font-light tracking-wide">TBA</span>
                   <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Barcelona, Spain</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* Show 3 */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">12</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">TBA</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Coimbra, Portugal</span>
                 </div>
               </div>
               <a
