@@ -22,7 +22,6 @@ export default function Home() {
         <div className="container mx-auto px-6 py-6 flex justify-between items-center">
           <h1 className="text-2xl font-bold tracking-[0.1em] uppercase">Anton Ripatti</h1>
           <nav className="hidden md:flex gap-10 text-xs font-medium uppercase tracking-[0.2em]">
-            <a href="#video" className="hover:text-white/70 transition-colors duration-300">Video</a>
             <a href="#about" className="hover:text-white/70 transition-colors duration-300">About</a>
             <a href="#music" className="hover:text-white/70 transition-colors duration-300">Music</a>
             <a href="#tour" className="hover:text-white/70 transition-colors duration-300">Tour</a>
@@ -261,9 +260,10 @@ export default function Home() {
           <h3 className="text-8xl md:text-9xl font-bold text-white/5 absolute -top-10 left-0 pointer-events-none select-none">
             TOUR
           </h3>
-          <h3 className="text-3xl md:text-4xl font-light mb-16 text-center uppercase tracking-wider relative z-10">
+          <h3 className="text-3xl md:text-4xl font-light mb-4 text-center uppercase tracking-wider relative z-10">
             Upcoming Shows
           </h3>
+          <p className="text-center text-gray-400 text-sm uppercase tracking-widest mb-16">2026</p>
 
           <div className="max-w-4xl mx-auto space-y-6">
             {/* Show 1 */}
@@ -274,7 +274,7 @@ export default function Home() {
                   <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Apr</div>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">Hank Chinaski</span>
+                  <span className="text-2xl font-light tracking-wide">HANK CHINASKI</span>
                   <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Berlin, Germany</span>
                 </div>
               </div>
