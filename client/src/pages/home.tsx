@@ -44,7 +44,7 @@ export default function Home() {
           transition-all duration-300 ease-in-out
           ${mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
         `}>
-          <nav className="flex flex-col items-center justify-center h-full gap-8 text-xl font-medium uppercase tracking-[0.2em]">
+          <nav className="flex flex-col items-center justify-start h-full gap-6 pt-12 text-xl font-medium uppercase tracking-[0.2em]">
             <a
               href="#about"
               onClick={() => setMobileMenuOpen(false)}
