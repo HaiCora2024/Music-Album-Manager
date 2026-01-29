@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'wouter';
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black overflow-x-hidden">
       {/* Global Background */}
@@ -27,10 +29,51 @@ export default function Home() {
             <a href="#tour" className="hover:text-white/70 transition-colors duration-300">Tour</a>
             <Link href="/contact" className="hover:text-white/70 transition-colors duration-300">Contact</Link>
           </nav>
-          {/* Mobile Menu Button Placeholder */}
-          <button className="md:hidden text-white uppercase text-xs tracking-widest">
-            Menu
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden text-white uppercase text-xs tracking-widest z-50 relative"
+          >
+            {mobileMenuOpen ? 'Close' : 'Menu'}
           </button>
+        </div>
+
+        {/* Mobile Menu */}
+        <div className={`
+          md:hidden fixed inset-0 top-[73px] bg-black/95 backdrop-blur-md z-40
+          transition-all duration-300 ease-in-out
+          ${mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
+        `}>
+          <nav className="flex flex-col items-center justify-center h-full gap-8 text-xl font-medium uppercase tracking-[0.2em]">
+            <a
+              href="#about"
+              onClick={() => setMobileMenuOpen(false)}
+              className="hover:text-white/70 transition-colors duration-300"
+            >
+              About
+            </a>
+            <a
+              href="#music"
+              onClick={() => setMobileMenuOpen(false)}
+              className="hover:text-white/70 transition-colors duration-300"
+            >
+              Music
+            </a>
+            <a
+              href="#tour"
+              onClick={() => setMobileMenuOpen(false)}
+              className="hover:text-white/70 transition-colors duration-300"
+            >
+              Tour
+            </a>
+            <Link
+              href="/contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="hover:text-white/70 transition-colors duration-300"
+            >
+              Contact
+            </Link>
+          </nav>
         </div>
       </header>
 
@@ -105,12 +148,12 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-32 relative z-10 bg-black/80 backdrop-blur-sm">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto mb-24 text-center">
+          <div className="max-w-4xl mx-auto mb-24 text-left md:text-center">
              <h3 className="text-sm md:text-base font-medium mb-6 text-gray-400 uppercase tracking-[0.3em]">
               The Project
             </h3>
             <h4 className="text-3xl md:text-5xl font-light mb-12 uppercase tracking-wide leading-tight">
-              About Anton Ripatti <br/><span className="text-gray-500">Babakamusic Performance</span>
+              About Anton Ripatti <br className="md:inline hidden"/><span className="md:inline block text-3xl md:text-5xl text-gray-500">Babakamusic Performance</span>
             </h4>
             
             <div className="text-gray-300 leading-loose space-y-8 text-lg md:text-xl font-light text-left">
@@ -174,7 +217,7 @@ export default function Home() {
       {/* Music Section */}
       <section id="music" className="py-32 relative z-10 bg-zinc-950/90 backdrop-blur-sm border-t border-white/5">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/10 pb-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 border-b border-white/10 pb-6">
             <h3 className="text-4xl md:text-6xl font-thin tracking-tighter uppercase">
               Discography
             </h3>
