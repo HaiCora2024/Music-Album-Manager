@@ -40,7 +40,7 @@ export default function Home() {
 
         {/* Mobile Menu */}
         <div className={`
-          md:hidden fixed inset-0 top-[73px] bg-black/95 backdrop-blur-md z-40
+          md:hidden fixed top-[85px] left-0 right-0 bottom-0 bg-black/95 backdrop-blur-md z-40
           transition-all duration-300 ease-in-out
           ${mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
         `}>
