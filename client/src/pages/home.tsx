@@ -333,6 +333,26 @@ export default function Home() {
             <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
                 <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">15—28</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Oct</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Italian Tour</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Cattivi Guagliuni Booking</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* Show 3 */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
                   <div className="text-4xl font-light group-hover:scale-110 transition-transform">30</div>
                   <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Oct</div>
                 </div>
@@ -349,7 +369,27 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Show 3 */}
+            {/* Show 4 */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">8</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">experimentáculo</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Setúbal, Portugal</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* Show 5 */}
             <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
                 <div className="text-center min-w-[80px]">
@@ -359,6 +399,26 @@ export default function Home() {
                 <div className="flex flex-col">
                   <span className="text-2xl font-light tracking-wide">TBA</span>
                   <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Coimbra, Portugal</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* Show 6 */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">13</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Ferro Bar</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Porto, Portugal</span>
                 </div>
               </div>
               <a
