@@ -309,26 +309,6 @@ export default function Home() {
           <p className="text-center text-gray-400 text-sm uppercase tracking-widest mb-16">2026</p>
 
           <div className="max-w-4xl mx-auto space-y-6">
-            {/* Show 1 */}
-            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
-              <div className="flex gap-12 items-center w-full md:w-auto">
-                <div className="text-center min-w-[80px]">
-                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">2</div>
-                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Apr</div>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">HANK CHINASKI</span>
-                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Berlin, Germany</span>
-                </div>
-              </div>
-              <a
-                href="mailto:babakamusic@gmail.com"
-                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
-              >
-                Tickets
-              </a>
-            </div>
-
             {/* Show 2 */}
             <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
