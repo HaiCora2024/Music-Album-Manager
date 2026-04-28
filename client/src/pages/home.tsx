@@ -158,13 +158,19 @@ export default function Home() {
             
             <div className="text-gray-300 leading-loose space-y-8 text-lg md:text-xl font-light text-left">
               <p>
-                <strong className="text-white font-normal">Babakamusic</strong> is a surreal live performance where music, theatrical play, visual storytelling, and light merge into one immersive experience.
+                <strong className="text-white font-normal">Babakamusic</strong> is a surreal live performance where music, theatrical play, visual storytelling, and light merge into one immersive experience. Born from years of artistic exploration across Europe, the project stands as one of the most distinctive live acts in the contemporary experimental performance scene.
               </p>
               <p>
-                Created by sound artist and performer Anton Ripatti, the project draws from experimental electronic music, psychedelic rock, dark cabaret, and elements of clownery.
+                Created by sound artist and performer <strong className="text-white font-normal">Anton Ripatti</strong>, the project draws from experimental electronic music, psychedelic rock, dark cabaret, and elements of clownery. Anton Ripatti has been developing his unique sonic language since the early 2010s, combining electronic production techniques with visceral live performance — blending the intimacy of a cabaret with the sonic depth of a full electronic set.
               </p>
               <p>
-                Each show unfolds as a humorous and emotional sonic journey — driven by dynamic stage presence, multilingual vocals, shadowplay, and dream-like lighting.
+                Each show unfolds as a humorous and emotional sonic journey — driven by dynamic stage presence, multilingual vocals, shadowplay, and dream-like lighting. Audiences travel through layers of sound: from dense atmospheric textures to raw, stripped-back moments of vulnerability. No two shows are identical. The set evolves with each venue, each crowd, each city.
+              </p>
+              <p>
+                Anton Ripatti's discography includes three studio releases — <em>Son 11</em>, <em>Marie</em>, and <em>Babakaband</em> — available on all major streaming platforms including Spotify and Apple Music. His production style is recognized for its cinematic scope: layered synthesizers, organic field recordings, and theatrical vocal arrangements that blur the line between music and storytelling.
+              </p>
+              <p>
+                Based in Germany with deep roots in European art and music communities, Anton Ripatti tours across the continent — performing in Germany, Portugal, Spain, Italy, and beyond. Upcoming 2026 shows include Cavette in Marburg, a full Italian tour via Cattivi Guagliuni Booking, Barcelona, and multiple dates in Portugal including Ferro Bar in Porto and experimentáculo in Setúbal.
               </p>
               <p className="font-normal text-white italic border-l-2 border-white pl-6 md:pl-0 md:border-0">
                 "Part cabaret, part concert, part light-theater — fully immersive."
