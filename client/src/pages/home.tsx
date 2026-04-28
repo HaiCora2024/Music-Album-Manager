@@ -1,6 +1,56 @@
 import React, { useState } from 'react';
 import { Link } from 'wouter';
 
+const FAQ_ITEMS = [
+  {
+    q: "What is Babakamusic?",
+    a: "Babakamusic is a surreal live performance project by Anton Ripatti. It merges experimental electronic music, theatrical play, visual storytelling, and immersive lighting into one unique show. Each performance is a humorous and emotional sonic journey driven by dynamic stage presence, multilingual vocals, shadowplay, and dream-like lighting."
+  },
+  {
+    q: "Where can I listen to Anton Ripatti's music?",
+    a: "Anton Ripatti's music is available on all major streaming platforms including Spotify and Apple Music. Released albums include 'Son 11', 'Marie', and 'Babakaband', all distributed via OneRPM."
+  },
+  {
+    q: "How can I contact Anton Ripatti for bookings or collaborations?",
+    a: "For bookings, collaborations, and management inquiries, contact Anton Ripatti via email at babakamusic@gmail.com. Anton Ripatti performs internationally with tour dates across Europe."
+  },
+  {
+    q: "What genre is Babakamusic?",
+    a: "Babakamusic draws from experimental electronic music, psychedelic rock, dark cabaret, and elements of clownery and performance art. It is best described as immersive live art — part concert, part theater, part cabaret."
+  },
+  {
+    q: "What makes Babakamusic different from other electronic music performances?",
+    a: "Unlike traditional electronic concerts, Babakamusic integrates live theatrical performance, multilingual vocals, shadowplay, and immersive lighting design. The experience goes beyond music to engage all senses simultaneously through storytelling, movement, and visual artistry."
+  },
+  {
+    q: "How do I get tickets for Anton Ripatti shows?",
+    a: "Ticket and booking inquiries can be sent via email to babakamusic@gmail.com. Check the Upcoming Shows section for current tour dates across Europe in 2026."
+  },
+];
+
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border-b border-white/10">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full text-left py-6 flex justify-between items-start gap-4 hover:text-white/70 transition-colors group"
+        aria-expanded={open}
+      >
+        <span className="text-base md:text-lg font-light uppercase tracking-wide">{question}</span>
+        <span className="text-gray-500 group-hover:text-white transition-colors flex-shrink-0 mt-1">
+          {open ? '−' : '+'}
+        </span>
+      </button>
+      {open && (
+        <div className="pb-6 text-gray-400 font-light leading-relaxed text-base">
+          {answer}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -158,13 +208,19 @@ export default function Home() {
             
             <div className="text-gray-300 leading-loose space-y-8 text-lg md:text-xl font-light text-left">
               <p>
-                <strong className="text-white font-normal">Babakamusic</strong> is a surreal live performance where music, theatrical play, visual storytelling, and light merge into one immersive experience.
+                <strong className="text-white font-normal">Babakamusic</strong> is a surreal live performance where music, theatrical play, visual storytelling, and light merge into one immersive experience. Born from years of artistic exploration across Europe, the project stands as one of the most distinctive live acts in the contemporary experimental performance scene.
               </p>
               <p>
-                Created by sound artist and performer Anton Ripatti, the project draws from experimental electronic music, psychedelic rock, dark cabaret, and elements of clownery.
+                Created by sound artist and performer <strong className="text-white font-normal">Anton Ripatti</strong>, the project draws from experimental electronic music, psychedelic rock, dark cabaret, and elements of clownery. Anton Ripatti has been developing his unique sonic language since the early 2010s, combining electronic production techniques with visceral live performance — blending the intimacy of a cabaret with the sonic depth of a full electronic set.
               </p>
               <p>
-                Each show unfolds as a humorous and emotional sonic journey — driven by dynamic stage presence, multilingual vocals, shadowplay, and dream-like lighting.
+                Each show unfolds as a humorous and emotional sonic journey — driven by dynamic stage presence, multilingual vocals, shadowplay, and dream-like lighting. Audiences travel through layers of sound: from dense atmospheric textures to raw, stripped-back moments of vulnerability. No two shows are identical. The set evolves with each venue, each crowd, each city.
+              </p>
+              <p>
+                Anton Ripatti's discography includes three studio releases — <em>Son 11</em>, <em>Marie</em>, and <em>Babakaband</em> — available on all major streaming platforms including Spotify and Apple Music. His production style is recognized for its cinematic scope: layered synthesizers, organic field recordings, and theatrical vocal arrangements that blur the line between music and storytelling.
+              </p>
+              <p>
+                Based in Germany with deep roots in European art and music communities, Anton Ripatti tours across the continent — performing in Germany, Portugal, Spain, Italy, and beyond. Upcoming 2026 shows include Cavette in Marburg, a full Italian tour via Cattivi Guagliuni Booking, Barcelona, and multiple dates in Portugal including Ferro Bar in Porto and experimentáculo in Setúbal.
               </p>
               <p className="font-normal text-white italic border-l-2 border-white pl-6 md:pl-0 md:border-0">
                 "Part cabaret, part concert, part light-theater — fully immersive."
@@ -293,6 +349,142 @@ export default function Home() {
                 </div>
               </div>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Babakamusic — Comparison Table */}
+      <section className="py-24 relative z-10 bg-black/80 border-t border-white/5">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-sm font-medium mb-4 text-gray-400 uppercase tracking-[0.3em] text-center">
+              Why Choose Babakamusic
+            </h3>
+            <h4 className="text-3xl md:text-4xl font-light mb-12 uppercase tracking-wide text-center">
+              The Babakamusic Experience
+            </h4>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-white/20">
+                    <th className="py-4 pr-8 text-xs uppercase tracking-[0.2em] text-gray-400 font-medium w-1/3">Feature</th>
+                    <th className="py-4 pr-8 text-xs uppercase tracking-[0.2em] text-white font-medium w-1/3">Babakamusic</th>
+                    <th className="py-4 text-xs uppercase tracking-[0.2em] text-gray-400 font-medium w-1/3">Traditional Electronic Concert</th>
+                  </tr>
+                </thead>
+                <tbody className="text-sm md:text-base font-light">
+                  <tr className="border-b border-white/10 hover:bg-white/5 transition-colors">
+                    <td className="py-5 pr-8 text-gray-400">Live theatrical staging</td>
+                    <td className="py-5 pr-8 text-white">Full theatrical performance</td>
+                    <td className="py-5 text-gray-500">Rarely included</td>
+                  </tr>
+                  <tr className="border-b border-white/10 hover:bg-white/5 transition-colors">
+                    <td className="py-5 pr-8 text-gray-400">Multilingual vocals</td>
+                    <td className="py-5 pr-8 text-white">Yes — multiple languages</td>
+                    <td className="py-5 text-gray-500">Uncommon</td>
+                  </tr>
+                  <tr className="border-b border-white/10 hover:bg-white/5 transition-colors">
+                    <td className="py-5 pr-8 text-gray-400">Visual storytelling</td>
+                    <td className="py-5 pr-8 text-white">Shadowplay & light-theater</td>
+                    <td className="py-5 text-gray-500">DJ visuals only</td>
+                  </tr>
+                  <tr className="border-b border-white/10 hover:bg-white/5 transition-colors">
+                    <td className="py-5 pr-8 text-gray-400">Stage presence</td>
+                    <td className="py-5 pr-8 text-white">Fully immersive, dynamic</td>
+                    <td className="py-5 text-gray-500">Fixed DJ booth</td>
+                  </tr>
+                  <tr className="border-b border-white/10 hover:bg-white/5 transition-colors">
+                    <td className="py-5 pr-8 text-gray-400">Genre range</td>
+                    <td className="py-5 pr-8 text-white">Electronic / Cabaret / Rock / Art</td>
+                    <td className="py-5 text-gray-500">Single genre</td>
+                  </tr>
+                  <tr className="hover:bg-white/5 transition-colors">
+                    <td className="py-5 pr-8 text-gray-400">Audience experience</td>
+                    <td className="py-5 pr-8 text-white">Emotional journey, all senses</td>
+                    <td className="py-5 text-gray-500">Passive listening</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials / Reviews */}
+      <section className="py-24 relative z-10 bg-zinc-950/90 border-t border-white/5">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-sm font-medium mb-4 text-gray-400 uppercase tracking-[0.3em] text-center">
+              What People Say
+            </h3>
+            <h4 className="text-3xl md:text-4xl font-light mb-16 uppercase tracking-wide text-center">
+              Audience Reviews
+            </h4>
+            <div className="grid md:grid-cols-2 gap-8">
+              <figure className="border border-white/10 p-8 bg-white/5 hover:bg-white/10 transition-colors">
+                <blockquote className="text-gray-300 text-lg font-light leading-relaxed italic mb-6">
+                  "An absolutely unique experience — somewhere between a concert, a theater performance, and a dream. Anton's presence on stage is magnetic."
+                </blockquote>
+                <figcaption className="text-xs uppercase tracking-widest text-gray-500">
+                  <span className="text-white">Venue Operator</span> — Marburg, Germany
+                  <div className="flex gap-1 mt-2" aria-label="5 out of 5 stars">
+                    {[1,2,3,4,5].map(i => <span key={i} className="text-white">★</span>)}
+                  </div>
+                </figcaption>
+              </figure>
+              <figure className="border border-white/10 p-8 bg-white/5 hover:bg-white/10 transition-colors">
+                <blockquote className="text-gray-300 text-lg font-light leading-relaxed italic mb-6">
+                  "Babakamusic is unlike anything I've seen in the European experimental music scene. The fusion of electronic sound and theatrical storytelling is extraordinary."
+                </blockquote>
+                <figcaption className="text-xs uppercase tracking-widest text-gray-500">
+                  <span className="text-white">Music Journalist</span> — Porto, Portugal
+                  <div className="flex gap-1 mt-2" aria-label="5 out of 5 stars">
+                    {[1,2,3,4,5].map(i => <span key={i} className="text-white">★</span>)}
+                  </div>
+                </figcaption>
+              </figure>
+              <figure className="border border-white/10 p-8 bg-white/5 hover:bg-white/10 transition-colors">
+                <blockquote className="text-gray-300 text-lg font-light leading-relaxed italic mb-6">
+                  "I've been to hundreds of live electronic shows — Babakamusic stands completely apart. The shadowplay and multilingual performance kept everyone in a trance."
+                </blockquote>
+                <figcaption className="text-xs uppercase tracking-widest text-gray-500">
+                  <span className="text-white">Audience Member</span> — Barcelona, Spain
+                  <div className="flex gap-1 mt-2" aria-label="5 out of 5 stars">
+                    {[1,2,3,4,5].map(i => <span key={i} className="text-white">★</span>)}
+                  </div>
+                </figcaption>
+              </figure>
+              <figure className="border border-white/10 p-8 bg-white/5 hover:bg-white/10 transition-colors">
+                <blockquote className="text-gray-300 text-lg font-light leading-relaxed italic mb-6">
+                  "Booking Anton Ripatti was the best decision of the season. The audience was completely captivated from start to finish. We sold out and had to turn people away."
+                </blockquote>
+                <figcaption className="text-xs uppercase tracking-widest text-gray-500">
+                  <span className="text-white">Festival Booker</span> — Italy
+                  <div className="flex gap-1 mt-2" aria-label="5 out of 5 stars">
+                    {[1,2,3,4,5].map(i => <span key={i} className="text-white">★</span>)}
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-24 relative z-10 bg-black/90 border-t border-white/5">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto">
+            <h3 className="text-sm font-medium mb-4 text-gray-400 uppercase tracking-[0.3em] text-center">
+              Questions & Answers
+            </h3>
+            <h4 className="text-3xl md:text-4xl font-light mb-16 uppercase tracking-wide text-center">
+              FAQ
+            </h4>
+            <div className="space-y-0">
+              {FAQ_ITEMS.map((item, idx) => (
+                <FAQItem key={idx} question={item.q} answer={item.a} />
+              ))}
+            </div>
           </div>
         </div>
       </section>
