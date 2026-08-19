@@ -26,7 +26,7 @@ export default function Home() {
           <nav className="hidden md:flex gap-10 text-xs font-medium uppercase tracking-[0.2em]">
             <a href="#about" className="hover:text-white/70 transition-colors duration-300">About</a>
             <a href="#music" className="hover:text-white/70 transition-colors duration-300">Music</a>
-            <a href="#tour" className="hover:text-white/70 transition-colors duration-300">Tour</a>
+            <a href="#tour" className="hover:text-white/70 transition-colors duration-300">Concerts</a>
             <Link href="/contact" className="hover:text-white/70 transition-colors duration-300">Contact</Link>
           </nav>
           {/* Mobile Menu Button */}
@@ -64,7 +64,7 @@ export default function Home() {
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-white/70 transition-colors duration-300"
             >
-              Tour
+              Concerts
             </a>
             <Link
               href="/contact"
@@ -307,7 +307,7 @@ export default function Home() {
       <section id="tour" className="py-32 relative z-10 bg-black/90 overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
           <h3 className="text-8xl md:text-9xl font-bold text-white/5 absolute -top-10 left-0 pointer-events-none select-none">
-            TOUR
+            CONCERTS
           </h3>
           <h3 className="text-3xl md:text-4xl font-light mb-4 text-center uppercase tracking-wider relative z-10">
             Upcoming Shows
@@ -424,7 +424,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-2xl font-light tracking-wide">Italian Tour</span>
-                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Cattivi Guagliuni Booking</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">For booking contact Cattivi Guagliuni Booking</span>
                 </div>
               </div>
               <a
@@ -459,7 +459,7 @@ export default function Home() {
             <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
                 <div className="text-center min-w-[80px]">
-                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">8</div>
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">07</div>
                   <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
                 </div>
                 <div className="flex flex-col">
