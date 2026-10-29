@@ -26,7 +26,7 @@ export default function Home() {
           <nav className="hidden md:flex gap-10 text-xs font-medium uppercase tracking-[0.2em]">
             <a href="#about" className="hover:text-white/70 transition-colors duration-300">About</a>
             <a href="#music" className="hover:text-white/70 transition-colors duration-300">Music</a>
-            <a href="#tour" className="hover:text-white/70 transition-colors duration-300">Concerts</a>
+            <a href="#tour" className="hover:text-white/70 transition-colors duration-300">Tour</a>
             <Link href="/contact" className="hover:text-white/70 transition-colors duration-300">Contact</Link>
           </nav>
           {/* Mobile Menu Button */}
@@ -64,7 +64,7 @@ export default function Home() {
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-white/70 transition-colors duration-300"
             >
-              Concerts
+              Tour
             </a>
             <Link
               href="/contact"
@@ -158,19 +158,13 @@ export default function Home() {
             
             <div className="text-gray-300 leading-loose space-y-8 text-lg md:text-xl font-light text-left">
               <p>
-                <strong className="text-white font-normal">Babakamusic</strong> is a surreal live performance where music, theatrical play, visual storytelling, and light merge into one immersive experience. Born from years of artistic exploration across Europe, the project stands as one of the most distinctive live acts in the contemporary experimental performance scene.
+                <strong className="text-white font-normal">Babakamusic</strong> is a surreal live performance where music, theatrical play, visual storytelling, and light merge into one immersive experience.
               </p>
               <p>
-                Created by sound artist and performer <strong className="text-white font-normal">Anton Ripatti</strong>, the project draws from experimental electronic music, psychedelic rock, dark cabaret, and elements of clownery. Anton Ripatti has been developing his unique sonic language since the early 2010s, combining electronic production techniques with visceral live performance — blending the intimacy of a cabaret with the sonic depth of a full electronic set.
+                Created by sound artist and performer Anton Ripatti, the project draws from experimental electronic music, psychedelic rock, dark cabaret, and elements of clownery.
               </p>
               <p>
-                Each show unfolds as a humorous and emotional sonic journey — driven by dynamic stage presence, multilingual vocals, shadowplay, and dream-like lighting. Audiences travel through layers of sound: from dense atmospheric textures to raw, stripped-back moments of vulnerability. No two shows are identical. The set evolves with each venue, each crowd, each city.
-              </p>
-              <p>
-                Anton Ripatti's discography includes three studio releases — <em>Son 11</em>, <em>Marie</em>, and <em>Babakaband</em> — available on all major streaming platforms including Spotify and Apple Music. His production style is recognized for its cinematic scope: layered synthesizers, organic field recordings, and theatrical vocal arrangements that blur the line between music and storytelling.
-              </p>
-              <p>
-                Based in Germany with deep roots in European art and music communities, Anton Ripatti tours across the continent — performing in Germany, Portugal, Spain, Italy, and beyond. Upcoming 2026 shows include Cavette in Marburg, a full Italian tour via Cattivi Guagliuni Booking, Barcelona, and multiple dates in Portugal including Ferro Bar in Porto and experimentáculo in Setúbal.
+                Each show unfolds as a humorous and emotional sonic journey — driven by dynamic stage presence, multilingual vocals, shadowplay, and dream-like lighting.
               </p>
               <p className="font-normal text-white italic border-l-2 border-white pl-6 md:pl-0 md:border-0">
                 "Part cabaret, part concert, part light-theater — fully immersive."
@@ -307,7 +301,7 @@ export default function Home() {
       <section id="tour" className="py-32 relative z-10 bg-black/90 overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
           <h3 className="text-8xl md:text-9xl font-bold text-white/5 absolute -top-10 left-0 pointer-events-none select-none">
-            CONCERTS
+            TOUR
           </h3>
           <h3 className="text-3xl md:text-4xl font-light mb-4 text-center uppercase tracking-wider relative z-10">
             Upcoming Shows
@@ -315,127 +309,7 @@ export default function Home() {
           <p className="text-center text-gray-400 text-sm uppercase tracking-widest mb-16">2026</p>
 
           <div className="max-w-4xl mx-auto space-y-6">
-            {/* Show 1 */}
-            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
-              <div className="flex gap-12 items-center w-full md:w-auto">
-                <div className="text-center min-w-[80px]">
-                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">10</div>
-                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">Platform Tavern</span>
-                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Southampton, UK</span>
-                </div>
-              </div>
-              <a
-                href="mailto:babakamusic@gmail.com"
-                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
-              >
-                Tickets
-              </a>
-            </div>
-
-            {/* Show 2 */}
-            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
-              <div className="flex gap-12 items-center w-full md:w-auto">
-                <div className="text-center min-w-[80px]">
-                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">12</div>
-                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">Medina Bookshop</span>
-                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Cowes, UK</span>
-                </div>
-              </div>
-              <a
-                href="mailto:babakamusic@gmail.com"
-                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
-              >
-                Tickets
-              </a>
-            </div>
-
-            {/* Show 3 */}
-            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
-              <div className="flex gap-12 items-center w-full md:w-auto">
-                <div className="text-center min-w-[80px]">
-                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">17</div>
-                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">Biddle Bros</span>
-                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">London, UK</span>
-                </div>
-              </div>
-              <a
-                href="mailto:babakamusic@gmail.com"
-                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
-              >
-                Tickets
-              </a>
-            </div>
-
-            {/* Show 4 */}
-            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
-              <div className="flex gap-12 items-center w-full md:w-auto">
-                <div className="text-center min-w-[80px]">
-                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">18</div>
-                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">The Jenny Lind</span>
-                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Hastings, UK</span>
-                </div>
-              </div>
-              <a
-                href="mailto:babakamusic@gmail.com"
-                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
-              >
-                Tickets
-              </a>
-            </div>
-
-            {/* Show 5 */}
-            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
-              <div className="flex gap-12 items-center w-full md:w-auto">
-                <div className="text-center min-w-[80px]">
-                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">19</div>
-                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">Hanushka Coffee House</span>
-                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Hastings, UK</span>
-                </div>
-              </div>
-              <a
-                href="mailto:babakamusic@gmail.com"
-                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
-              >
-                Tickets
-              </a>
-            </div>
-
-            {/* Show 6 */}
-            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
-              <div className="flex gap-12 items-center w-full md:w-auto">
-                <div className="text-center min-w-[80px]">
-                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">15—28</div>
-                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Oct</div>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">Italian Tour</span>
-                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">For booking contact Cattivi Guagliuni Booking</span>
-                </div>
-              </div>
-              <a
-                href="mailto:babakamusic@gmail.com"
-                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
-              >
-                Booking
-              </a>
-            </div>
-
-            {/* Show 7 */}
+            {/* 30 OCT - NIU Barcelona */}
             <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
                 <div className="text-center min-w-[80px]">
@@ -455,7 +329,47 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Show 8 */}
+            {/* 03 NOV - PLUMAS & FLORES Porto */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">03</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Plumas & Flores</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Porto, Portugal</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* 05 NOV - PASSEVITE ART GALLERY Lisbon */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">05</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Passevite Art Gallery</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Lisbon, Portugal</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* 07 NOV - EXPERIMENTÁCULO Setúbal */}
             <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
                 <div className="text-center min-w-[80px]">
@@ -475,7 +389,7 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Show 9 */}
+            {/* 12 NOV - GRÉMIO OPERÁRIO Coimbra */}
             <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
                 <div className="text-center min-w-[80px]">
@@ -483,7 +397,7 @@ export default function Home() {
                   <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">Grémio Operário de Coimbra</span>
+                  <span className="text-2xl font-light tracking-wide">Grémio Operário</span>
                   <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Coimbra, Portugal</span>
                 </div>
               </div>
@@ -495,16 +409,16 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Show 10 */}
+            {/* 20 NOV - ALLAN VERS Cox */}
             <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
                 <div className="text-center min-w-[80px]">
-                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">13</div>
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">20</div>
                   <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">Ferro Bar</span>
-                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Porto, Portugal</span>
+                  <span className="text-2xl font-light tracking-wide">Allan Vers</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Cox, France</span>
                 </div>
               </div>
               <a
@@ -513,6 +427,162 @@ export default function Home() {
               >
                 Tickets
               </a>
+            </div>
+
+            {/* 23 NOV - LE QUARTIER GÉNÉRAL OBERKAMPF Paris */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">23</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Le Quartier Général Oberkampf</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Paris, France</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* 26 NOV - Ô PETIT VOYAGEUR Douai (Acoustic) */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">26</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Ô Petit Voyageur</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Douai, France (Acoustic Show)</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* 27 NOV - Ô PETIT VOYAGEUR Douai */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">27</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Ô Petit Voyageur</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Douai, France</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Past Shows Section */}
+      <section className="py-32 relative z-10 bg-zinc-950/90 backdrop-blur-sm border-t border-white/5">
+        <div className="container mx-auto px-6 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-light mb-4 text-center uppercase tracking-wider relative z-10">
+            Past Shows
+          </h3>
+          <p className="text-center text-gray-400 text-sm uppercase tracking-widest mb-16">2026</p>
+
+          <div className="max-w-4xl mx-auto space-y-6 opacity-60">
+            {/* 10 SEP - Platform Tavern */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light">10</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Platform Tavern</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Southampton, UK</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 12 SEP - Medina Bookshop */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light">12</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Medina Bookshop</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Cowes, UK</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 17 SEP - Biddle Bros */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light">17</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Biddle Bros</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">London, UK</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 18 SEP - The Jenny Lind */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light">18</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">The Jenny Lind</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Hastings, UK</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 19 SEP - Hanushka Coffee House */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light">19</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Hanushka Coffee House</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Hastings, UK</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 15-28 OCT - Italian Tour */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-3xl font-light">15—28</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Oct</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Italian Tour</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">For booking contact Cattivi Guagliuni Booking</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
