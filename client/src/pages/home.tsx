@@ -492,6 +492,102 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Past Shows Section */}
+      <section className="py-32 relative z-10 bg-zinc-950/90 backdrop-blur-sm border-t border-white/5">
+        <div className="container mx-auto px-6 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-light mb-4 text-center uppercase tracking-wider relative z-10">
+            Past Shows
+          </h3>
+          <p className="text-center text-gray-400 text-sm uppercase tracking-widest mb-16">2026</p>
+
+          <div className="max-w-4xl mx-auto space-y-6 opacity-60">
+            {/* 10 SEP - Platform Tavern */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light">10</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Platform Tavern</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Southampton, UK</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 12 SEP - Medina Bookshop */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light">12</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Medina Bookshop</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Cowes, UK</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 17 SEP - Biddle Bros */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light">17</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Biddle Bros</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">London, UK</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 18 SEP - The Jenny Lind */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light">18</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">The Jenny Lind</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Hastings, UK</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 19 SEP - Hanushka Coffee House */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light">19</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Sep</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Hanushka Coffee House</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Hastings, UK</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 15-28 OCT - Italian Tour */}
+            <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-3xl font-light">15—28</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Oct</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Italian Tour</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">For booking contact Cattivi Guagliuni Booking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-20 bg-black border-t border-gray-900 relative z-10">
         <div className="container mx-auto px-6">
