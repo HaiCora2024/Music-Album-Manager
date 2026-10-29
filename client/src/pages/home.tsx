@@ -309,27 +309,7 @@ export default function Home() {
           <p className="text-center text-gray-400 text-sm uppercase tracking-widest mb-16">2026</p>
 
           <div className="max-w-4xl mx-auto space-y-6">
-            {/* Show 1 */}
-            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
-              <div className="flex gap-12 items-center w-full md:w-auto">
-                <div className="text-center min-w-[80px]">
-                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">2</div>
-                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Apr</div>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">HANK CHINASKI</span>
-                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Berlin, Germany</span>
-                </div>
-              </div>
-              <a
-                href="mailto:babakamusic@gmail.com"
-                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
-              >
-                Tickets
-              </a>
-            </div>
-
-            {/* Show 2 */}
+            {/* 30 OCT - NIU Barcelona */}
             <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
                 <div className="text-center min-w-[80px]">
@@ -337,7 +317,7 @@ export default function Home() {
                   <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Oct</div>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">TBA</span>
+                  <span className="text-2xl font-light tracking-wide">NIU</span>
                   <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Barcelona, Spain</span>
                 </div>
               </div>
@@ -349,7 +329,67 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Show 3 */}
+            {/* 03 NOV - PLUMAS & FLORES Porto */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">03</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Plumas & Flores</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Porto, Portugal</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* 05 NOV - PASSEVITE ART GALLERY Lisbon */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">05</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Passevite Art Gallery</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Lisbon, Portugal</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* 07 NOV - EXPERIMENTÁCULO Setúbal */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">07</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Experimentáculo</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Setúbal, Portugal</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* 12 NOV - GRÉMIO OPERÁRIO Coimbra */}
             <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
                 <div className="text-center min-w-[80px]">
@@ -357,8 +397,88 @@ export default function Home() {
                   <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-2xl font-light tracking-wide">TBA</span>
+                  <span className="text-2xl font-light tracking-wide">Grémio Operário</span>
                   <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Coimbra, Portugal</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* 20 NOV - ALLAN VERS Cox */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">20</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Allan Vers</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Cox, France</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* 23 NOV - LE QUARTIER GÉNÉRAL OBERKAMPF Paris */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">23</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Le Quartier Général Oberkampf</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Paris, France</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* 26 NOV - Ô PETIT VOYAGEUR Douai (Acoustic) */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">26</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Ô Petit Voyageur</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Douai, France (Acoustic Show)</span>
+                </div>
+              </div>
+              <a
+                href="mailto:babakamusic@gmail.com"
+                className="w-full md:w-auto px-8 py-3 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all uppercase text-xs tracking-[0.2em] text-center"
+              >
+                Tickets
+              </a>
+            </div>
+
+            {/* 27 NOV - Ô PETIT VOYAGEUR Douai */}
+            <div className="group border-b border-white/10 hover:border-white/50 hover:bg-white/5 transition-all duration-300 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex gap-12 items-center w-full md:w-auto">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl font-light group-hover:scale-110 transition-transform">27</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Nov</div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-light tracking-wide">Ô Petit Voyageur</span>
+                  <span className="text-gray-500 uppercase text-xs tracking-widest mt-1">Douai, France</span>
                 </div>
               </div>
               <a
