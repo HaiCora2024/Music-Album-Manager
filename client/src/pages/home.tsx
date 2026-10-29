@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showPastShows, setShowPastShows] = useState(false);
 
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black overflow-x-hidden">
@@ -493,14 +494,25 @@ export default function Home() {
       </section>
 
       {/* Past Shows Section */}
-      <section className="py-32 relative z-10 bg-zinc-950/90 backdrop-blur-sm border-t border-white/5">
+      <section className="py-16 relative z-10 bg-zinc-950/90 backdrop-blur-sm border-t border-white/5">
         <div className="container mx-auto px-6 relative z-10">
-          <h3 className="text-3xl md:text-4xl font-light mb-4 text-center uppercase tracking-wider relative z-10">
-            Past Shows
-          </h3>
-          <p className="text-center text-gray-400 text-sm uppercase tracking-widest mb-16">2026</p>
+          <div className="max-w-4xl mx-auto">
+            <button
+              onClick={() => setShowPastShows(!showPastShows)}
+              className="w-full flex items-center justify-center gap-4 py-6 hover:bg-white/5 transition-all duration-300 group"
+            >
+              <h3 className="text-2xl md:text-3xl font-light text-center uppercase tracking-wider opacity-60 group-hover:opacity-100 transition-opacity">
+                Past Shows
+              </h3>
+              <span className="text-gray-400 text-sm opacity-60 group-hover:opacity-100 transition-opacity">
+                {showPastShows ? '▲' : '▼'}
+              </span>
+            </button>
 
-          <div className="max-w-4xl mx-auto space-y-6 opacity-60">
+          <div className={`
+            max-w-4xl mx-auto space-y-6 opacity-60 overflow-hidden transition-all duration-500 ease-in-out
+            ${showPastShows ? 'max-h-[2000px] mt-8' : 'max-h-0'}
+          `}>
             {/* 10 SEP - Platform Tavern */}
             <div className="group border-b border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex gap-12 items-center w-full md:w-auto">
@@ -584,6 +596,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
